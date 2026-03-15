@@ -49,6 +49,38 @@ text-align:center;
 margin-bottom:25px;
 }
 
+/* SERVICES */
+
+.services-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.card{
+background:#1a1a1a;
+padding:16px;
+border-radius:8px;
+text-align:center;
+}
+
+/* INSTAGRAM */
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.gallery iframe{
+width:100%;
+height:320px;
+border:none;
+border-radius:8px;
+}
+
+/* PRICE LIST */
+
 .tables{
 display:grid;
 grid-template-columns:1fr;
@@ -69,6 +101,8 @@ border-bottom:1px solid #333;
 font-size:14px;
 }
 
+/* BUTTONS */
+
 .buttons{
 text-align:center;
 margin-top:30px;
@@ -85,18 +119,7 @@ text-decoration:none;
 font-weight:500;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-}
-
-.gallery iframe{
-width:100%;
-height:320px;
-border:none;
-border-radius:8px;
-}
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -104,13 +127,19 @@ padding:25px;
 background:black;
 }
 
+/* DESKTOP */
+
 @media(min-width:700px){
 
-.tables{
-grid-template-columns:repeat(3,1fr);
+.services-grid{
+grid-template-columns:repeat(4,1fr);
 }
 
 .gallery{
+grid-template-columns:repeat(3,1fr);
+}
+
+.tables{
 grid-template-columns:repeat(3,1fr);
 }
 
@@ -122,6 +151,8 @@ grid-template-columns:repeat(3,1fr);
 
 <body>
 
+<!-- HEADER -->
+
 <div class="header">
 
 <div class="logo">Maddy Unisex Salon</div>
@@ -132,6 +163,50 @@ Luxury Hair & Beauty Services in Raipur
 
 </div>
 
+
+<!-- SERVICES -->
+
+<div class="section">
+
+<h2>Our Services</h2>
+
+<div class="services-grid">
+
+<div class="card">Hair Cut</div>
+<div class="card">Hair Spa</div>
+<div class="card">Facial</div>
+<div class="card">Waxing</div>
+<div class="card">Manicure</div>
+<div class="card">Pedicure</div>
+<div class="card">Hair Treatment</div>
+<div class="card">Hair Color</div>
+
+</div>
+
+</div>
+
+
+<!-- OUR WORK -->
+
+<div class="section">
+
+<h2>Our Work</h2>
+
+<div class="gallery">
+
+<iframe src="https://www.instagram.com/p/DNpaKlDPw_C/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DTTEUs3jFOB/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DJMW8shvsc9/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DPsRJ7Wk2ni/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DIoN9Dlv-S4/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DJEcOb8vH5j/embed"></iframe>
+
+</div>
+
+</div>
+
+
+<!-- PRICE LIST -->
 
 <div class="section">
 
@@ -220,24 +295,6 @@ Luxury Hair & Beauty Services in Raipur
 <a href="https://g.page/r/CV_example/review" target="_blank">
 ⭐ Google Review
 </a>
-
-</div>
-
-</div>
-
-
-<div class="section">
-
-<h2>Our Work</h2>
-
-<div class="gallery">
-
-<iframe src="https://www.instagram.com/p/DNpaKlDPw_C/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DTTEUs3jFOB/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DJMW8shvsc9/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DPsRJ7Wk2ni/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DIoN9Dlv-S4/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DJEcOb8vH5j/embed"></iframe>
 
 </div>
 
