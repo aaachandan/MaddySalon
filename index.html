@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,20 +17,17 @@ margin:0;
 font-family:Poppins,Arial;
 background:#0f0f10;
 color:white;
-padding-bottom:70px;
 }
-
-/* HEADER */
 
 .header{
 background:#000;
-padding:28px 15px;
+padding:30px 15px;
 border-bottom:1px solid #222;
 text-align:center;
 }
 
 .logo{
-font-size:32px;
+font-size:34px;
 font-weight:600;
 color:#d4af37;
 }
@@ -40,35 +38,16 @@ color:#aaa;
 margin-top:6px;
 }
 
-/* SECTION */
-
 .section{
-padding:35px 18px;
+padding:40px 18px;
 max-width:1100px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-margin-bottom:22px;
+margin-bottom:25px;
 }
-
-/* SERVICES */
-
-.services-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-}
-
-.card{
-background:#1a1a1a;
-padding:15px;
-border-radius:8px;
-text-align:center;
-}
-
-/* PRICE LIST */
 
 .tables{
 display:grid;
@@ -85,12 +64,26 @@ overflow:hidden;
 .row{
 display:flex;
 justify-content:space-between;
-padding:12px;
+padding:13px;
 border-bottom:1px solid #333;
 font-size:14px;
 }
 
-/* INSTAGRAM */
+.buttons{
+text-align:center;
+margin-top:30px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+background:#d4af37;
+color:black;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
+}
 
 .gallery{
 display:grid;
@@ -105,95 +98,13 @@ border:none;
 border-radius:8px;
 }
 
-/* MAP */
-
-.map iframe{
-width:100%;
-height:260px;
-border:0;
-border-radius:10px;
-cursor:pointer;
-}
-
-/* BUTTON */
-
-.book-btn{
-display:inline-block;
-margin-top:18px;
-background:#d4af37;
-color:black;
-padding:12px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:500;
-}
-
-/* REVIEW */
-
-.review-btn{
-display:inline-block;
-margin-top:18px;
-background:#d4af37;
-color:black;
-padding:12px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:500;
-}
-
-/* FOOTER */
-
 footer{
 text-align:center;
 padding:25px;
 background:black;
 }
 
-/* WHATSAPP FLOAT */
-
-.whatsapp{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#25D366;
-padding:15px 18px;
-border-radius:40px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* STICKY BAR */
-
-.sticky-bar{
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#000;
-display:flex;
-border-top:1px solid #333;
-}
-
-.sticky-bar a{
-flex:1;
-text-align:center;
-padding:14px 0;
-text-decoration:none;
-font-size:16px;
-color:white;
-}
-
-.call-btn{background:#1e88e5;}
-.whatsapp-btn{background:#25D366;}
-
-/* DESKTOP */
-
 @media(min-width:700px){
-
-.services-grid{
-grid-template-columns:repeat(4,1fr);
-}
 
 .tables{
 grid-template-columns:repeat(3,1fr);
@@ -203,10 +114,6 @@ grid-template-columns:repeat(3,1fr);
 grid-template-columns:repeat(3,1fr);
 }
 
-.sticky-bar{
-display:none;
-}
-
 }
 
 </style>
@@ -214,8 +121,6 @@ display:none;
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <div class="header">
 
@@ -228,30 +133,6 @@ Luxury Hair & Beauty Services in Raipur
 </div>
 
 
-<!-- SERVICES -->
-
-<div class="section">
-
-<h2>Our Services</h2>
-
-<div class="services-grid">
-
-<div class="card">Hair Cut</div>
-<div class="card">Hair Spa</div>
-<div class="card">Facial</div>
-<div class="card">Waxing</div>
-<div class="card">Manicure</div>
-<div class="card">Pedicure</div>
-<div class="card">Hair Treatment</div>
-<div class="card">Hair Color</div>
-
-</div>
-
-</div>
-
-
-<!-- PRICE LIST -->
-
 <div class="section">
 
 <h2>Complete Price List</h2>
@@ -260,42 +141,90 @@ Luxury Hair & Beauty Services in Raipur
 
 <div class="price">
 
-<div class="row"><span>Hair Cut</span><span>₹400</span></div>
-<div class="row"><span>Hair Wash</span><span>₹200</span></div>
-<div class="row"><span>Blow Dry</span><span>₹250</span></div>
 <div class="row"><span>Eyebrow</span><span>₹50</span></div>
 <div class="row"><span>Upper Lips</span><span>₹20</span></div>
+<div class="row"><span>Chin</span><span>₹20</span></div>
+<div class="row"><span>Forehead</span><span>₹20</span></div>
+<div class="row"><span>Side Locks</span><span>₹50</span></div>
 <div class="row"><span>Full Face</span><span>₹170</span></div>
 
+<div class="row"><span>Hair Wash</span><span>₹200</span></div>
+<div class="row"><span>Hair Wash With Blow Dry</span><span>₹400</span></div>
+<div class="row"><span>Blow Dry</span><span>₹250</span></div>
+
+<div class="row"><span>Hair Cut</span><span>₹400</span></div>
+<div class="row"><span>Trimming</span><span>₹300</span></div>
+
 </div>
+
 
 <div class="price">
 
-<div class="row"><span>Fruit Facial</span><span>₹600</span></div>
-<div class="row"><span>Gold Facial</span><span>₹800</span></div>
-<div class="row"><span>Oxy Facial</span><span>₹1000</span></div>
-<div class="row"><span>Cleanup</span><span>₹600</span></div>
-<div class="row"><span>D-Tan</span><span>₹500</span></div>
+<div class="row"><span>OxyLife Cleanup</span><span>₹600</span></div>
+<div class="row"><span>Fruit Cleanup</span><span>₹500</span></div>
+<div class="row"><span>Wine Cleanup</span><span>₹700</span></div>
+
+<div class="row"><span>O3+ D-Tan</span><span>₹500</span></div>
+<div class="row"><span>OxyLife D-Tan</span><span>₹400</span></div>
 <div class="row"><span>Bleach</span><span>₹300</span></div>
 
+<div class="row"><span>Nature Fruit Facial</span><span>₹600</span></div>
+<div class="row"><span>Nature Gold Facial</span><span>₹800</span></div>
+<div class="row"><span>OxyLife Facial</span><span>₹1000</span></div>
+<div class="row"><span>Lotus Gold Facial</span><span>₹1300</span></div>
+<div class="row"><span>Lotus Diamond Facial</span><span>₹1500</span></div>
+
+<div class="row"><span>Loreal Hair Spa</span><span>₹800</span></div>
+<div class="row"><span>Schwarzkopf Hair Spa</span><span>₹800</span></div>
+<div class="row"><span>Nashi Hair Spa</span><span>₹1500</span></div>
+
 </div>
+
 
 <div class="price">
 
 <div class="row"><span>Basic Manicure</span><span>₹400</span></div>
 <div class="row"><span>Deluxe Manicure</span><span>₹500</span></div>
+<div class="row"><span>Super Deluxe Manicure</span><span>₹600</span></div>
+<div class="row"><span>Premium Manicure</span><span>₹700</span></div>
+
 <div class="row"><span>Basic Pedicure</span><span>₹500</span></div>
 <div class="row"><span>Deluxe Pedicure</span><span>₹600</span></div>
+<div class="row"><span>Super Deluxe Pedicure</span><span>₹700</span></div>
 <div class="row"><span>Premium Pedicure</span><span>₹800</span></div>
 
-</div>
+<div class="row"><span>Root Touchup</span><span>₹1000</span></div>
+<div class="row"><span>Global Hair Colour</span><span>₹1999</span></div>
+<div class="row"><span>Hair Botox</span><span>₹4000</span></div>
+<div class="row"><span>Smoothening</span><span>₹2999</span></div>
+<div class="row"><span>Nanoplastia</span><span>₹4999</span></div>
+
+<div class="row"><span>Party Makeup</span><span>₹1500+</span></div>
+<div class="row"><span>Bridal Makeup</span><span>₹6000+</span></div>
 
 </div>
 
 </div>
 
 
-<!-- INSTAGRAM -->
+<div class="buttons">
+
+<a href="https://wa.me/918602403500">
+📅 Book Appointment
+</a>
+
+<a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank">
+📍 Open Location
+</a>
+
+<a href="https://g.page/r/CV_example/review" target="_blank">
+⭐ Google Review
+</a>
+
+</div>
+
+</div>
+
 
 <div class="section">
 
@@ -315,45 +244,6 @@ Luxury Hair & Beauty Services in Raipur
 </div>
 
 
-<!-- LOCATION -->
-
-<div class="section map">
-
-<h2>Visit Our Salon</h2>
-
-<p style="text-align:center">
-Old Dhamtari Rd, near Tarun Bazar & Swastik Bakery<br>
-Krishna Nagar, Santoshi Nagar, Raipur
-</p>
-
-<a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank">
-<iframe src="https://maps.google.com/maps?q=Maddy%20Unisex%20Salon%20Raipur&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-</a>
-
-<div style="text-align:center;margin-top:20px;">
-<a class="book-btn" href="https://wa.me/918602403500">
-Book Appointment
-</a>
-</div>
-
-</div>
-
-
-<!-- GOOGLE REVIEW -->
-
-<div class="section" style="text-align:center">
-
-<h2>Google Reviews</h2>
-
-<p>If you loved our service please leave us a review.</p>
-
-<a class="review-btn" href="https://g.page/r/CV_example/review" target="_blank">
-Leave a Google Review
-</a>
-
-</div>
-
-
 <footer>
 
 <p>📞 8602403500</p>
@@ -366,26 +256,6 @@ Instagram :
 </p>
 
 </footer>
-
-
-<a class="whatsapp" href="https://wa.me/918602403500">
-WhatsApp
-</a>
-
-
-<!-- STICKY ACTION BAR -->
-
-<div class="sticky-bar">
-
-<a href="tel:8602403500" class="call-btn">
-📞 Call Now
-</a>
-
-<a href="https://wa.me/918602403500" class="whatsapp-btn">
-💬 WhatsApp
-</a>
-
-</div>
 
 </body>
 </html>
