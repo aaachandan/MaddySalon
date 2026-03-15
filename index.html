@@ -7,7 +7,7 @@
 
 <title>Maddy Unisex Salon | Raipur</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,67 +18,51 @@ background:#0f0f10;
 color:white;
 }
 
-/* HERO HEADER */
+/* HEADER */
 
-.hero{
-height:40vh;
-min-height:260px;
-background:url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250") center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
+.header{
+background:#000;
+padding:28px 15px;
+border-bottom:1px solid #222;
 text-align:center;
-position:relative;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.65);
+.logo{
+font-size:32px;
+font-weight:600;
+color:#d4af37;
 }
 
-.hero-content{
-position:relative;
-padding:10px;
-max-width:500px;
-}
-
-.hero h1{
-font-size:28px;
-margin:0;
-}
-
-.hero p{
+.tagline{
 font-size:14px;
+color:#aaa;
 margin-top:6px;
 }
 
-.btn{
+/* BUTTON */
+
+.book-btn{
 display:inline-block;
-margin-top:12px;
-padding:10px 24px;
-border-radius:30px;
+margin-top:18px;
 background:#d4af37;
 color:black;
+padding:12px 28px;
+border-radius:30px;
 text-decoration:none;
-font-weight:bold;
+font-weight:500;
 }
 
 /* SECTION */
 
 .section{
 padding:35px 18px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 }
 
 h2{
 text-align:center;
-margin-bottom:20px;
+margin-bottom:22px;
 }
 
 /* SERVICES */
@@ -86,7 +70,7 @@ margin-bottom:20px;
 .services-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:10px;
+gap:12px;
 }
 
 .card{
@@ -118,18 +102,18 @@ border-bottom:1px solid #333;
 font-size:14px;
 }
 
-/* GALLERY */
+/* INSTAGRAM */
 
 .gallery{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:8px;
+gap:10px;
 }
 
-.gallery img{
+.gallery iframe{
 width:100%;
-height:160px;
-object-fit:cover;
+height:320px;
+border:none;
 border-radius:8px;
 }
 
@@ -137,9 +121,22 @@ border-radius:8px;
 
 .map iframe{
 width:100%;
-height:250px;
+height:260px;
 border:0;
 border-radius:10px;
+}
+
+/* GOOGLE REVIEW */
+
+.review-btn{
+display:inline-block;
+margin-top:18px;
+background:#d4af37;
+color:black;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
 }
 
 /* FOOTER */
@@ -188,20 +185,14 @@ grid-template-columns:repeat(3,1fr);
 
 <body>
 
-<!-- HERO -->
+<!-- HEADER -->
 
-<div class="hero">
+<div class="header">
 
-<div class="hero-content">
+<div class="logo">Maddy Unisex Salon</div>
 
-<h1>Maddy Unisex Salon</h1>
-
-<p>Luxury Hair & Beauty Services in Raipur</p>
-
-<a class="btn" href="https://wa.me/918602403500">
-Book Appointment
-</a>
-
+<div class="tagline">
+Luxury Hair & Beauty Services in Raipur
 </div>
 
 </div>
@@ -222,7 +213,7 @@ Book Appointment
 <div class="card">Manicure</div>
 <div class="card">Pedicure</div>
 <div class="card">Hair Treatment</div>
-<div class="card">Bridal Makeup</div>
+<div class="card">Hair Color</div>
 
 </div>
 
@@ -237,56 +228,43 @@ Book Appointment
 
 <div class="tables">
 
-<!-- TABLE 1 -->
-
 <div class="price">
 
 <div class="row"><span>Eyebrow</span><span>₹50</span></div>
-<div class="row"><span>Upper Lips</span><span>₹30</span></div>
+<div class="row"><span>Upper Lips</span><span>₹20</span></div>
 <div class="row"><span>Chin</span><span>₹20</span></div>
-<div class="row"><span>Forehead</span><span>₹30</span></div>
+<div class="row"><span>Forehead</span><span>₹20</span></div>
 <div class="row"><span>Side Locks</span><span>₹50</span></div>
 <div class="row"><span>Full Face</span><span>₹170</span></div>
 
 <div class="row"><span>Hair Wash</span><span>₹200</span></div>
-<div class="row"><span>Hair Wash with Conditioner</span><span>₹200</span></div>
-<div class="row"><span>Hair Wash with Blow Dry</span><span>₹400</span></div>
+<div class="row"><span>Hair Wash With Blow Dry</span><span>₹400</span></div>
+<div class="row"><span>Blow Dry</span><span>₹250</span></div>
 
 <div class="row"><span>Hair Cut</span><span>₹400</span></div>
-<div class="row"><span>Trimming with Blow Dry</span><span>₹300</span></div>
+<div class="row"><span>Trimming</span><span>₹300</span></div>
 
 </div>
 
 
-<!-- TABLE 2 -->
-
 <div class="price">
 
-<div class="row"><span>OxyLife / Lotus Clean Up</span><span>₹700</span></div>
-<div class="row"><span>D-Tan Clean Up</span><span>₹600</span></div>
-<div class="row"><span>Fruit Clean Up</span><span>₹500</span></div>
+<div class="row"><span>OxyLife / Lotus Cleanup</span><span>₹600</span></div>
+<div class="row"><span>Fruit Cleanup</span><span>₹500</span></div>
+<div class="row"><span>Wine Cleanup</span><span>₹700</span></div>
 
 <div class="row"><span>O3+ D-Tan</span><span>₹500</span></div>
 <div class="row"><span>OxyLife D-Tan</span><span>₹400</span></div>
 <div class="row"><span>Bleach</span><span>₹300</span></div>
 
-<div class="row"><span>Nature Fruit Facial</span><span>₹800</span></div>
-<div class="row"><span>Nature Gold Facial</span><span>₹1000</span></div>
+<div class="row"><span>Nature Fruit Facial</span><span>₹600</span></div>
+<div class="row"><span>Nature Gold Facial</span><span>₹800</span></div>
+<div class="row"><span>OxyLife Facial</span><span>₹1000</span></div>
 <div class="row"><span>Lotus Gold Facial</span><span>₹1300</span></div>
 <div class="row"><span>Lotus Diamond Facial</span><span>₹1500</span></div>
-<div class="row"><span>Hydra Facial</span><span>₹2500</span></div>
-
-<div class="row"><span>Loreal Hair Spa</span><span>₹700+</span></div>
-<div class="row"><span>Schwarzkopf Hair Spa</span><span>₹700+</span></div>
-<div class="row"><span>Nashi Hair Spa</span><span>₹1500+</span></div>
-
-<div class="row"><span>Root Touchup</span><span>₹1000+</span></div>
-<div class="row"><span>Global Hair Colour</span><span>₹1998+</span></div>
 
 </div>
 
-
-<!-- TABLE 3 -->
 
 <div class="price">
 
@@ -300,20 +278,6 @@ Book Appointment
 <div class="row"><span>Super Deluxe Pedicure</span><span>₹700</span></div>
 <div class="row"><span>Premium Pedicure</span><span>₹800</span></div>
 
-<div class="row"><span>Full Hand Wax</span><span>₹400</span></div>
-<div class="row"><span>Under Arms Wax</span><span>₹170</span></div>
-<div class="row"><span>Full Leg Wax</span><span>₹800</span></div>
-<div class="row"><span>Half Leg Wax</span><span>₹400</span></div>
-<div class="row"><span>Full Body Wax</span><span>₹2500</span></div>
-
-<div class="row"><span>Hair Botox</span><span>₹4000</span></div>
-<div class="row"><span>Smoothening</span><span>₹2999+</span></div>
-<div class="row"><span>Keratin / Nanoplastia</span><span>₹2999+</span></div>
-
-<div class="row"><span>Party Makeup</span><span>₹1500+</span></div>
-<div class="row"><span>Bridal Makeup</span><span>₹6000+</span></div>
-<div class="row"><span>Face Makeup</span><span>₹1000</span></div>
-
 </div>
 
 </div>
@@ -321,7 +285,7 @@ Book Appointment
 </div>
 
 
-<!-- GALLERY -->
+<!-- INSTAGRAM -->
 
 <div class="section">
 
@@ -329,18 +293,22 @@ Book Appointment
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388">
-<img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3">
-<img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b">
-<img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b">
-<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
-<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
+<iframe src="https://www.instagram.com/p/DNpaKlDPw_C/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DTTEUs3jFOB/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DJMW8shvsc9/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DPsRJ7Wk2ni/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DIoN9Dlv-S4/embed"></iframe>
+<iframe src="https://www.instagram.com/p/DJEcOb8vH5j/embed"></iframe>
 
 </div>
 
 </div>
 
 
+<div style="text-align:center;margin-top:20px;">
+<a class="book-btn" href="https://wa.me/918602403500">
+Book Appointment
+  
 <!-- LOCATION -->
 
 <div class="section map">
@@ -350,12 +318,29 @@ Book Appointment
 <p style="text-align:center">
 
 Old Dhamtari Rd, near Tarun Bazar & Swastik Bakery<br>
-Krishna Nagar, Santoshi Nagar<br>
-Raipur, Chhattisgarh
+Krishna Nagar, Santoshi Nagar,Raipur, Chhattisgarh
 
 </p>
 
 <iframe src="https://maps.google.com/maps?q=Old%20Dhamtari%20Rd%20Raipur&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</a>
+</div>
+
+</div>
+
+
+<!-- GOOGLE REVIEWS -->
+
+<div class="section" style="text-align:center">
+
+<h2>Google Reviews</h2>
+
+<p>If you loved our service please leave us a review on Google.</p>
+
+<a class="review-btn" href="https://g.page/r/CV_example/review" target="_blank">
+Leave a Google Review
+</a>
 
 </div>
 
@@ -365,7 +350,7 @@ Raipur, Chhattisgarh
 <p>📞 8602403500</p>
 
 <p>
-Instagram
+Instagram :
 <a href="https://www.instagram.com/maddy_unisex_salon" style="color:#d4af37">
 @maddy_unisex_salon
 </a>
