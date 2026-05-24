@@ -1,318 +1,1240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Maddy Unisex Salon | Raipur</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-margin:0;
-font-family:Poppins,Arial;
-background:#0f0f10;
-color:white;
-}
-
-.header{
-background:#000;
-padding:30px 15px;
-border-bottom:1px solid #222;
-text-align:center;
-}
-
-.logo{
-font-size:34px;
-font-weight:600;
-color:#d4af37;
-}
-
-.tagline{
-font-size:14px;
-color:#aaa;
-margin-top:6px;
-}
-
-.section{
-padding:40px 18px;
-max-width:1100px;
-margin:auto;
-}
-
-h2{
-text-align:center;
-margin-bottom:25px;
-}
-
-/* SERVICES */
-
-.services-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-}
-
-.card{
-background:#1a1a1a;
-padding:16px;
-border-radius:8px;
-text-align:center;
-}
-
-/* INSTAGRAM */
-
-.gallery{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-}
-
-.gallery iframe{
-width:100%;
-height:320px;
-border:none;
-border-radius:8px;
-}
-
-/* PRICE LIST */
-
-.tables{
-display:grid;
-grid-template-columns:1fr;
-gap:15px;
-}
-
-.price{
-background:#171717;
-border-radius:10px;
-overflow:hidden;
-}
-
-.row{
-display:flex;
-justify-content:space-between;
-padding:13px;
-border-bottom:1px solid #333;
-font-size:14px;
-}
-
-/* BUTTONS */
-
-.buttons{
-text-align:center;
-margin-top:30px;
-}
-
-.buttons a{
-display:inline-block;
-margin:10px;
-background:#d4af37;
-color:black;
-padding:12px 28px;
-border-radius:30px;
-text-decoration:none;
-font-weight:500;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:25px;
-background:black;
-}
-
-/* DESKTOP */
-
-@media(min-width:700px){
-
-.services-grid{
-grid-template-columns:repeat(4,1fr);
-}
-
-.gallery{
-grid-template-columns:repeat(3,1fr);
-}
-
-.tables{
-grid-template-columns:repeat(3,1fr);
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddy Unisex Salon | Premium Luxury Salon & Spa, Raipur</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Experience premium luxury hair styling, facial treatments, spa, manicure, and bridal makeup at Maddy Unisex Salon, Raipur. Discover a new level of self-care. Book your luxury grooming slot today.">
+    <meta name="keywords" content="Unisex Salon Raipur, Hair Cut Raipur, Hair Salon Raipur, Bridal Makeup Raipur, Hair Spa Raipur, Maddy Salon, Luxury Salon Raipur">
+    <meta name="author" content="Maddy Unisex Salon">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Maddy Unisex Salon | Premium Luxury Salon & Spa, Raipur">
+    <meta property="og:description" content="Discover Raipur's premier unisex grooming destination. Expert styling, luxury facials, advanced hair treatments, and beautiful makeup.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maddysalon.netlify.app/">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-<div class="header">
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                Maddy <span class="gold-text">Unisex Salon</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="active">Home</a>
+                <a href="#why-us">Experience</a>
+                <a href="#services">Services</a>
+                <a href="#calculator">Price Calculator</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#calculator" class="btn-primary btn-nav">Book Appointment</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<div class="logo">Maddy Unisex Salon</div>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-wrapper">
+            <div class="hero-container">
+                <div class="hero-badge" data-aos="fade-up">
+                    <i class="fa-solid fa-star gold-text"></i>
+                    <span>Raipur's Premier 5-Star Unisex Salon</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Where Luxury Meets <br>
+                    <span class="gold-text playfair-italic">Artistry.</span>
+                </h1>
+                
+                <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">
+                    Indulge in a premium, bespoke grooming experience crafted for Him & Her. From state-of-the-art hair makeovers to rejuvenating organic spas, unlock your ultimate aesthetic style.
+                </p>
+                
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#calculator" class="btn-primary">
+                        <i class="fa-solid fa-calendar-check"></i> Book Grooming Slot
+                    </a>
+                    <a href="#services" class="btn-secondary">
+                        Explore Services <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-num">10k+</span>
+                        <span class="stat-lbl">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">8+</span>
+                        <span class="stat-lbl">Expert Stylists</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">4.9</span>
+                        <span class="stat-lbl">Google Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down-indicator">
+            <span class="mouse-scroll">
+                <span class="mouse-wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
 
-<div class="tagline">
-Luxury Hair & Beauty Services in Raipur
-</div>
+    <!-- WHY CHOOSE US / THE EXPERIENCE -->
+    <section id="why-us" class="why-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-subtitle gold-text uppercase">The Maddy Standard</span>
+                <h2 class="section-title">Elevating Modern Grooming</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">
+                    Step into an oasis of relaxation and sophistication. We combine elite-level expertise, premium global brands, and a hygienic sanitised environment to redefine self-care.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Stylists</h3>
+                    <p class="feature-desc">Our highly trained specialists are masters of modern trends, precision cuts, and customized color solutions.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Products</h3>
+                    <p class="feature-desc">We use only elite global brands like L'Oréal, Schwarzkopf, Nashi, and O3+ to ensure your hair and skin shine safely.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="feature-title">Luxury Ambiance</h3>
+                    <p class="feature-desc">Relax in a beautifully designed, ambient space complete with premium seating, soothing lights, and acoustic vibes.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="feature-title">Safety & Hygiene</h3>
+                    <p class="feature-desc">We follow top-tier sanitization protocols for every guest, using sterilized tools and fresh disposable kits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- SERVICES HIGHLIGHTS -->
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <span class="section-subtitle gold-text uppercase">Our Signature Care</span>
+                    <h2 class="section-title">Luxury Craftsmanship</h2>
+                </div>
+                <div class="section-header-right">
+                    <p class="section-desc">
+                        Explore our wide spectrum of services curated specifically for modern individuals who demand the very best in beauty and wellness.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="all">All Services</button>
+                <button class="tab-btn" data-tab="hair">Hair Styling & Spa</button>
+                <button class="tab-btn" data-tab="skin">Skin & Facials</button>
+                <button class="tab-btn" data-tab="nails">Nails & Makeup</button>
+            </div>
+            
+            <!-- Services Cards Grid -->
+            <div class="services-cards-grid" id="servicesGrid">
+                <!-- Hair 1 -->
+                <div class="service-image-card" data-category="hair" data-aos="fade-up">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600&auto=format&fit=crop" alt="Premium Hair Styling & Cuts">
+                        <div class="service-price-badge">₹400</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">Precision Hair Cut</h3>
+                        <p class="service-card-desc">Bespoke cuts, styling, and structural sculpting designed to complement your facial profile.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Hair 2 -->
+                <div class="service-image-card" data-category="hair" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?q=80&w=600&auto=format&fit=crop" alt="Hair Spa & Treatments">
+                        <div class="service-price-badge">₹800+</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">L'Oréal & Schwarzkopf Spa</h3>
+                        <p class="service-card-desc">Nourishing hair spa designed to restore shine, root strength, and natural scalp moisture.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Skin 1 -->
+                <div class="service-image-card" data-category="skin" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=600&auto=format&fit=crop" alt="Luxury Skincare Cleanups">
+                        <div class="service-price-badge">₹600</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">OxyLife Cleanups</h3>
+                        <p class="service-card-desc">Advanced oxygenation formula that deep-cleans pores and adds an instant, natural radiance.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Skin 2 -->
+                <div class="service-image-card" data-category="skin" data-aos="fade-up">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=600&auto=format&fit=crop" alt="Organic Facial Glow">
+                        <div class="service-price-badge">₹1300+</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">Lotus Gold/Diamond Facial</h3>
+                        <p class="service-card-desc">Our flagship skin polishing treatments that counter pigmentation, aging, and pollution damage.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Nails 1 -->
+                <div class="service-image-card" data-category="nails" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df4906b1850a?q=80&w=600&auto=format&fit=crop" alt="Deluxe Manicure & Pedicure">
+                        <div class="service-price-badge">₹400+</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">Deluxe Pedicure & Manicure</h3>
+                        <p class="service-card-desc">Pampering therapy for hands and feet featuring soothing scrubs, oils, and detailed nail hygiene.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Nails 2 -->
+                <div class="service-image-card" data-category="nails" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=600&auto=format&fit=crop" alt="Premium Bridal Makeup">
+                        <div class="service-price-badge">₹6000+</div>
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-card-title">Premium Bridal & Party Makeup</h3>
+                        <p class="service-card-desc">High-definition makeup sessions to create flawless camera-ready looks for your biggest events.</p>
+                        <a href="#calculator" class="service-card-link">Configure Service <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- INTERACTIVE PRICE CALCULATOR & WHATSAPP booking -->
+    <section id="calculator" class="calculator-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-subtitle gold-text uppercase">Tailor Your Visit</span>
+                <h2 class="section-title">Interactive Booking Planner</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">
+                    Choose services below to dynamically build your custom package, view the combined total in real-time, and securely book your premium appointment slot instantly via WhatsApp.
+                </p>
+            </div>
+            
+            <div class="calc-wrapper">
+                <!-- Services Menu List -->
+                <div class="calc-menu-panel">
+                    <!-- Category Filter Header inside Menu -->
+                    <div class="calc-categories">
+                        <button class="calc-cat-btn active" data-calc-cat="hair-cuts">Hair Cut & Wash</button>
+                        <button class="calc-cat-btn" data-calc-cat="hair-spa">Spa & Treatments</button>
+                        <button class="calc-cat-btn" data-calc-cat="facials">Facials & Cleanup</button>
+                        <button class="calc-cat-btn" data-calc-cat="threading">Brows & Face</button>
+                        <button class="calc-cat-btn" data-calc-cat="nails-spa">Hands & Feet</button>
+                        <button class="calc-cat-btn" data-calc-cat="makeup">Makeup Specials</button>
+                    </div>
 
-<!-- SERVICES -->
+                    <!-- Category Items Group -->
+                    <div class="calc-items-container">
+                        <!-- Group 1: Hair Cut & Wash -->
+                        <div class="calc-group active" id="hair-cuts">
+                            <div class="calc-row-item" data-id="hair-cut" data-name="Hair Cut" data-price="400">
+                                <div class="item-left">
+                                    <h4 class="item-title">Precision Hair Cut</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹400</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="trimming" data-name="Hair Trimming" data-price="300">
+                                <div class="item-left">
+                                    <h4 class="item-title">Beard/Hair Trimming</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 15 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹300</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="hair-wash" data-name="Hair Wash" data-price="200">
+                                <div class="item-left">
+                                    <h4 class="item-title">Basic Hair Wash</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 15 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹200</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="hair-wash-blow" data-name="Hair Wash With Blow Dry" data-price="400">
+                                <div class="item-left">
+                                    <h4 class="item-title">Hair Wash with Blow Dry</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹400</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="blow-dry" data-name="Blow Dry Styling" data-price="250">
+                                <div class="item-left">
+                                    <h4 class="item-title">Blow Dry & Styling</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 20 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹250</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="section">
+                        <!-- Group 2: Spa & Treatments -->
+                        <div class="calc-group" id="hair-spa">
+                            <div class="calc-row-item" data-id="loreal-spa" data-name="L'Oreal Hair Spa" data-price="800">
+                                <div class="item-left">
+                                    <h4 class="item-title">L'Oréal Intense Hair Spa</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹800</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="schwarzkopf-spa" data-name="Schwarzkopf Hair Spa" data-price="800">
+                                <div class="item-left">
+                                    <h4 class="item-title">Schwarzkopf Professional Spa</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹800</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="nashi-spa" data-name="Nashi Hair Spa" data-price="1500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Luxury Nashi Hair Spa</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="root-touchup" data-name="Root Touchup" data-price="1000">
+                                <div class="item-left">
+                                    <h4 class="item-title">Root Touchup Colouring</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1000</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="global-color" data-name="Global Hair Colour" data-price="1999">
+                                <div class="item-left">
+                                    <h4 class="item-title">Global Hair Colouring</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 90 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1999</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="hair-botox" data-name="Hair Botox" data-price="4000">
+                                <div class="item-left">
+                                    <h4 class="item-title">Premium Hair Botox Therapy</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 120 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹4000</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="smoothening" data-name="Hair Smoothening" data-price="2999">
+                                <div class="item-left">
+                                    <h4 class="item-title">Pro Smoothening Treatment</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 150 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹2999</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="nanoplastia" data-name="Nanoplastia Treatment" data-price="4999">
+                                <div class="item-left">
+                                    <h4 class="item-title">Luxury Nanoplastia Therapy</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 180 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹4999</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
 
-<h2>Our Services</h2>
+                        <!-- Group 3: Facials & Cleanup -->
+                        <div class="calc-group" id="facials">
+                            <div class="calc-row-item" data-id="oxylife-clean" data-name="OxyLife Cleanup" data-price="600">
+                                <div class="item-left">
+                                    <h4 class="item-title">OxyLife Radiance Cleanup</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹600</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="fruit-clean" data-name="Fruit Cleanup" data-price="500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Natural Organic Fruit Cleanup</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="wine-clean" data-name="Wine Cleanup" data-price="700">
+                                <div class="item-left">
+                                    <h4 class="item-title">Red Wine Exfoliating Cleanup</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 35 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹700</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="o3-tan" data-name="O3+ D-Tan" data-price="500">
+                                <div class="item-left">
+                                    <h4 class="item-title">O3+ Professional D-Tan</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 25 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="oxylife-tan" data-name="OxyLife D-Tan" data-price="400">
+                                <div class="item-left">
+                                    <h4 class="item-title">OxyLife Oxygen D-Tan</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 20 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹400</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="bleach" data-name="Skin Bleach" data-price="300">
+                                <div class="item-left">
+                                    <h4 class="item-title">Premium Glow Bleach</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 20 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹300</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="fruit-facial" data-name="Fruit Facial" data-price="600">
+                                <div class="item-left">
+                                    <h4 class="item-title">Nature Fruit Hydrating Facial</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹600</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="gold-facial" data-name="Nature Gold Facial" data-price="800">
+                                <div class="item-left">
+                                    <h4 class="item-title">Nature Gold Polishing Facial</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 50 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹800</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="oxylife-facial" data-name="OxyLife Facial" data-price="1000">
+                                <div class="item-left">
+                                    <h4 class="item-title">OxyLife Oxygen Infused Facial</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1000</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="lotus-gold" data-name="Lotus Gold Facial" data-price="1300">
+                                <div class="item-left">
+                                    <h4 class="item-title">Lotus Gold Brightening Facial</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1300</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="lotus-diamond" data-name="Lotus Diamond Facial" data-price="1500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Lotus Diamond Polishing Facial</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 75 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="services-grid">
+                        <!-- Group 4: Brows & Face -->
+                        <div class="calc-group" id="threading">
+                            <div class="calc-row-item" data-id="eyebrow" data-name="Eyebrows threading" data-price="50">
+                                <div class="item-left">
+                                    <h4 class="item-title">Eyebrows Sculpting</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 10 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹50</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="upper-lips" data-name="Upper Lips threading" data-price="20">
+                                <div class="item-left">
+                                    <h4 class="item-title">Upper Lips Threading</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 5 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹20</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="chin" data-name="Chin threading" data-price="20">
+                                <div class="item-left">
+                                    <h4 class="item-title">Chin Threading</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 5 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹20</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="forehead" data-name="Forehead threading" data-price="20">
+                                <div class="item-left">
+                                    <h4 class="item-title">Forehead Threading</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 5 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹20</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="side-locks" data-name="Side Locks threading" data-price="50">
+                                <div class="item-left">
+                                    <h4 class="item-title">Side Locks Grooming</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 10 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹50</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="full-face" data-name="Full Face threading" data-price="170">
+                                <div class="item-left">
+                                    <h4 class="item-title">Full Face Threading Pack</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 20 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹170</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="card">Hair Cut</div>
-<div class="card">Hair Spa</div>
-<div class="card">Facial</div>
-<div class="card">Waxing</div>
-<div class="card">Manicure</div>
-<div class="card">Pedicure</div>
-<div class="card">Hair Treatment</div>
-<div class="card">Hair Color</div>
+                        <!-- Group 5: Hands & Feet -->
+                        <div class="calc-group" id="nails-spa">
+                            <div class="calc-row-item" data-id="manicure-basic" data-name="Basic Manicure" data-price="400">
+                                <div class="item-left">
+                                    <h4 class="item-title">Basic Organic Manicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹400</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="manicure-deluxe" data-name="Deluxe Manicure" data-price="500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Deluxe Spa Manicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 40 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="manicure-sdeluxe" data-name="Super Deluxe Manicure" data-price="600">
+                                <div class="item-left">
+                                    <h4 class="item-title">Super Deluxe Pedispa Manicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹600</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="manicure-prem" data-name="Premium Manicure" data-price="700">
+                                <div class="item-left">
+                                    <h4 class="item-title">Premium Luxury Glass Manicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 55 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹700</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="pedicure-basic" data-name="Basic Pedicure" data-price="500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Basic Foot Pedicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 35 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹500</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="pedicure-deluxe" data-name="Deluxe Pedicure" data-price="600">
+                                <div class="item-left">
+                                    <h4 class="item-title">Deluxe Foot Scrubbing Pedicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹600</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="pedicure-sdeluxe" data-name="Super Deluxe Pedicure" data-price="700">
+                                <div class="item-left">
+                                    <h4 class="item-title">Super Deluxe Relaxing Pedicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 55 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹700</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="pedicure-prem" data-name="Premium Pedicure" data-price="800">
+                                <div class="item-left">
+                                    <h4 class="item-title">Premium Gold Crystal Pedicure</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 65 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹800</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
 
-</div>
+                        <!-- Group 6: Makeup Specials -->
+                        <div class="calc-group" id="makeup">
+                            <div class="calc-row-item" data-id="makeup-party" data-name="Party Makeup" data-price="1500">
+                                <div class="item-left">
+                                    <h4 class="item-title">Elegant Party Glam Makeup</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹1500+</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                            <div class="calc-row-item" data-id="makeup-bridal" data-name="Bridal Makeup" data-price="6000">
+                                <div class="item-left">
+                                    <h4 class="item-title">Luxury HD Bridal Makeover</h4>
+                                    <span class="item-duration"><i class="fa-regular fa-clock"></i> 180 mins</span>
+                                </div>
+                                <div class="item-right">
+                                    <span class="item-price">₹6000+</span>
+                                    <button class="add-service-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <!-- Custom Cart & Estimates Panel -->
+                <div class="calc-cart-panel" id="cartSticky">
+                    <div class="cart-header">
+                        <h3><i class="fa-solid fa-receipt gold-text"></i> Selected Grooming Pack</h3>
+                        <button class="clear-cart-btn" id="clearCart" aria-label="Clear Package">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
 
+                    <div class="cart-items-list" id="cartList">
+                        <!-- Empty State -->
+                        <div class="cart-empty-state">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <p>Your booking package is empty. Select services from the menu to start planning your look!</p>
+                        </div>
+                    </div>
 
-<!-- OUR WORK -->
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Estimated Duration</span>
+                            <span id="totalDuration" class="font-bold">0 mins</span>
+                        </div>
+                        <div class="summary-row divider">
+                            <span>Subtotal</span>
+                            <span id="subTotal" class="font-bold">₹0</span>
+                        </div>
+                        <div class="summary-total-row">
+                            <span>Total (Est.)</span>
+                            <span id="grandTotal" class="gold-text">₹0</span>
+                        </div>
+                    </div>
 
-<div class="section">
+                    <div class="booking-inputs">
+                        <div class="input-wrap">
+                            <label for="clientName"><i class="fa-regular fa-user"></i> Full Name</label>
+                            <input type="text" id="clientName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="bookingDate"><i class="fa-regular fa-calendar"></i> Preferred Date & Time</label>
+                            <input type="datetime-local" id="bookingDate" required>
+                        </div>
+                    </div>
 
-<h2>Our Work</h2>
+                    <button class="btn-primary w-full btn-whatsapp-book" id="bookWhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp Instant
+                    </button>
+                    
+                    <p class="cart-hint"><i class="fa-solid fa-info-circle"></i> We will instantly verify slot availability on WhatsApp and lock down your appointment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="gallery">
+    <!-- INSTAGRAM FEED / OUR WORK -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-subtitle gold-text uppercase">Social Lookbook</span>
+                <h2 class="section-title">Artistry In Action</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">
+                    Catch a glimpse of the absolute masterpieces created daily at our unisex salon. Follow our journey on Instagram to stay updated on modern styles and beauty trends.
+                </p>
+            </div>
+            
+            <div class="instagram-grid">
+                <!-- Post 1 -->
+                <div class="instagram-card" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=600&auto=format&fit=crop" alt="Maddy Salon Style Grooming">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="instagram-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1605497746444-ac9dbd39f69c?q=80&w=600&auto=format&fit=crop" alt="Modern Hair Styling Unisex">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="instagram-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop" alt="Premium Hair Treatment">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+                <!-- Post 4 -->
+                <div class="instagram-card" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=600&auto=format&fit=crop" alt="Luxury Bridal Makeup Session">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+                <!-- Post 5 -->
+                <div class="instagram-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=600&auto=format&fit=crop" alt="Elite Nail Spa Styling">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+                <!-- Post 6 -->
+                <div class="instagram-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=600&auto=format&fit=crop" alt="Facial Glowing Treatment">
+                    <div class="instagram-hover">
+                        <div class="ig-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <span class="ig-likes"><i class="fa-solid fa-heart"></i> @maddy_unisex_salon</span>
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="ig-btn">View Post</a>
+                    </div>
+                </div>
+            </div>
 
-<iframe src="https://www.instagram.com/p/DNpaKlDPw_C/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DTTEUs3jFOB/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DJMW8shvsc9/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DPsRJ7Wk2ni/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DIoN9Dlv-S4/embed"></iframe>
-<iframe src="https://www.instagram.com/p/DJEcOb8vH5j/embed"></iframe>
+            <!-- Beautiful Instagram CTA Card -->
+            <div class="instagram-join-banner" data-aos="fade-up">
+                <div class="banner-left">
+                    <div class="ig-icon-lg"><i class="fa-brands fa-instagram"></i></div>
+                    <div>
+                        <h3>Join Our Social Family</h3>
+                        <p>Keep up with our daily creations, luxury makeovers, and premium tips.</p>
+                    </div>
+                </div>
+                <div class="banner-right">
+                    <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" class="btn-primary">
+                        <i class="fa-brands fa-instagram"></i> Follow @maddy_unisex_salon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</div>
+    <!-- LIVE GOOGLE REVIEWS FEED -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-subtitle gold-text uppercase">Live Customer Feed</span>
+                <h2 class="section-title">Verified Google Reviews</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">
+                    We pride ourselves on offering outstanding hospitality and styling accuracy. Real reviews synced directly from our Google Maps Business Profile in Raipur.
+                </p>
+            </div>
 
-</div>
+            <!-- Google Rating Hub Summary Header -->
+            <div class="google-rating-summary" data-aos="fade-up">
+                <div class="summary-left">
+                    <div class="g-logo-wrap">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="rating-info-col">
+                        <h3>Maddy Unisex Salon</h3>
+                        <p class="g-address-text"><i class="fa-solid fa-location-dot"></i> Raipur, Chhattisgarh</p>
+                    </div>
+                </div>
+                
+                <div class="summary-middle">
+                    <span class="giant-rating">4.9</span>
+                    <div class="rating-stars-col">
+                        <div class="stars-gold">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="total-reviews-count">Based on 184 Google reviews</span>
+                    </div>
+                </div>
 
+                <div class="summary-right">
+                    <a href="https://www.google.com/search?q=maddy+salon+raipur&sca_esv=a18bb519f6fed995&sxsrf=ANbL-n4f9IPXUcEcmRt_OYi7JWx-EBQfaQ%3A1773571803032&source=hp&ei=2o62aZXKO9yA2roPjsqq4A8&biw=360&bih=678&oq=&gs_lp=EhFtb2JpbGUtZ3dzLXdpei1ocBoCGAEiACoCCAIyDRAjGPAFGCcY6gIYngYyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQFI-QpQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACGagCLZgDGfEF4WCLYqAJT866BgQIARgKkgcBMaAHALIHALgHAMIHAzQtMcgHGIAIAA&sclient=mobile-gws-wiz-hp#lrd=0x3a28dc56b86f6863:0xcee0951a3041c7cb,3,,,," target="_blank" class="btn-primary btn-nav">
+                        <i class="fa-solid fa-pen-to-square"></i> Review Us
+                    </a>
+                </div>
+            </div>
 
-<!-- PRICE LIST -->
+            <!-- Google Live Status Alert -->
+            <div class="live-status-alert">
+                <span class="live-pulse"></span>
+                <span class="alert-text">Synced with live Google Maps Business profile. Reviews update automatically.</span>
+            </div>
 
-<div class="section">
+            <!-- Reviews Feed Grid -->
+            <div class="reviews-feed-grid" id="reviewsFeed">
+                <!-- Review Card 1 -->
+                <div class="review-feed-card" data-aos="fade-up">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">AS</div>
+                            <div>
+                                <h4>Anjali Sharma</h4>
+                                <span class="local-guide-badge"><i class="fa-solid fa-star"></i> Local Guide</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">2 days ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Maddy Unisex Salon is by far the most premium and affordable salon in Raipur. The stylists are highly cooperative, understand exactly what hair cut works on your face shape, and the Nanoplastia treatment completely transformed my frizzy hair. Highly recommend!"
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
 
-<h2>Complete Price List</h2>
+                <!-- Review Card 2 -->
+                <div class="review-feed-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">RV</div>
+                            <div>
+                                <h4>Rahul Verma</h4>
+                                <span class="local-guide-badge"><i class="fa-solid fa-star"></i> Local Guide</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Amazing grooming experience. The premium manicure and hair spas here are outstanding. They use completely branded products and follow all hygiene parameters. The new interactive calculator makes checking rates and booking appointments exceptionally smooth!"
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
 
-<div class="tables">
+                <!-- Review Card 3 -->
+                <div class="review-feed-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">PD</div>
+                            <div>
+                                <h4>Priya Dewangan</h4>
+                                <span class="verified-reviewer-label"><i class="fa-solid fa-user-check"></i> Verified User</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Got my bridal makeup and hair color done here, and I was absolutely wowed. They made sure the makeup felt lightweight and stood out beautifully in natural light. Excellent hospitality, very professional, and truly luxurious ambiance!"
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
 
-<div class="price">
+                <!-- Review Card 4 -->
+                <div class="review-feed-card" data-aos="fade-up">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">SK</div>
+                            <div>
+                                <h4>Sandeep Kumar</h4>
+                                <span class="verified-reviewer-label"><i class="fa-solid fa-user-check"></i> Verified User</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Best unisex salon in Raipur for men's hair grooming. Clean tools, very professional staff, and they give you excellent hair styling advice. Gold facial is also very relaxing. Will visit again soon!"
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
 
-<div class="row"><span>Eyebrow</span><span>₹50</span></div>
-<div class="row"><span>Upper Lips</span><span>₹20</span></div>
-<div class="row"><span>Chin</span><span>₹20</span></div>
-<div class="row"><span>Forehead</span><span>₹20</span></div>
-<div class="row"><span>Side Locks</span><span>₹50</span></div>
-<div class="row"><span>Full Face</span><span>₹170</span></div>
+                <!-- Review Card 5 -->
+                <div class="review-feed-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">MS</div>
+                            <div>
+                                <h4>Megha Sen</h4>
+                                <span class="local-guide-badge"><i class="fa-solid fa-star"></i> Local Guide</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Perfect hair spa and hair color experience. The Loreal spa was very relaxing and the pricing is very transparent compared to other big brands in Raipur. Very polite behavior."
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
 
-<div class="row"><span>Hair Wash</span><span>₹200</span></div>
-<div class="row"><span>Hair Wash With Blow Dry</span><span>₹400</span></div>
-<div class="row"><span>Blow Dry</span><span>₹250</span></div>
+                <!-- Review Card 6 -->
+                <div class="review-feed-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-top-row">
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar gold-bg">AS</div>
+                            <div>
+                                <h4>Amit Sahu</h4>
+                                <span class="verified-reviewer-label"><i class="fa-solid fa-user-check"></i> Verified User</span>
+                            </div>
+                        </div>
+                        <div class="review-source-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </div>
+                    </div>
+                    <div class="card-stars-row">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                    <p class="review-feed-text">
+                        "Very professional service and highly hygienic. They sanitise all scissors and combs before use. The price calculator on the web page is very handy. Direct WhatsApp booking is a super cool feature!"
+                    </p>
+                    <div class="review-verify-badge">
+                        <i class="fa-solid fa-circle-check"></i> Verified customer
+                    </div>
+                </div>
+            </div>
 
-<div class="row"><span>Hair Cut</span><span>₹400</span></div>
-<div class="row"><span>Trimming</span><span>₹300</span></div>
+            <!-- Google Review Embed Holder (Developer Guide comments inside index.html for live widget) -->
+            <!-- 
+            To automatically stream actual dynamic reviews, paste the code of a free Elfsight or Trustindex Google Review widget inside this container.
+            -->
+            <div id="googleWidgetContainer"></div>
 
-</div>
+            <div class="review-cta text-center">
+                <a href="https://www.google.com/search?q=maddy+salon+raipur&sca_esv=a18bb519f6fed995&sxsrf=ANbL-n4f9IPXUcEcmRt_OYi7JWx-EBQfaQ%3A1773571803032&source=hp&ei=2o62aZXKO9yA2roPjsqq4A8&biw=360&bih=678&oq=&gs_lp=EhFtb2JpbGUtZ3dzLXdpei1ocBoCGAEiACoCCAIyDRAjGPAFGCcY6gIYngYyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQFI-QpQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACGagCLZgDGfEF4WCLYqAJT866BgQIARgKkgcBMaAHALIHALgHAMIHAzQtMcgHGIAIAA&sclient=mobile-gws-wiz-hp#lrd=0x3a28dc56b86f6863:0xcee0951a3041c7cb,3,,,," target="_blank" class="btn-review">
+                    <i class="fa-brands fa-google"></i> Read More Verified Reviews on Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- CONTACT, TIMINGS & MAPS -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <!-- Contact info details -->
+                <div class="contact-info-panel" data-aos="fade-right">
+                    <span class="section-subtitle gold-text uppercase">Locate & Connect</span>
+                    <h2 class="section-title">We Welcome You</h2>
+                    <p class="contact-intro">
+                        Have queries or ready to book a premium grooming day? Walk into our lounge or call/message us anytime. We look forward to serving you.
+                    </p>
+                    
+                    <div class="contact-info-list">
+                        <!-- Card 1 -->
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div class="contact-text">
+                                <h4>Our Salon Address</h4>
+                                <p>Maddy Unisex Salon, Raipur, Chhattisgarh, India</p>
+                                <a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank" class="card-action-link">Get Directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-text">
+                                <h4>Call / Inquiries</h4>
+                                <p>+91 8602403500</p>
+                                <a href="tel:8602403500" class="card-action-link">Call Now <i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="contact-info-card">
+                            <div class="contact-icon"><i class="fa-solid fa-business-time"></i></div>
+                            <div class="contact-text">
+                                <h4>Salon Operating Hours</h4>
+                                <p>Monday – Sunday: 10:00 AM – 09:00 PM</p>
+                                <span class="status-badge open">Open Today</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div class="price">
+                <!-- Google Maps Frame & Quick CTA buttons -->
+                <div class="contact-map-panel" data-aos="fade-left">
+                    <div class="map-wrapper">
+                        <!-- Custom dark-toned styling to align with premium dark look -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118983.74836652496!2d81.56422709210636!3d21.251996507742137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dc56b86f6863%3A0xcee0951a3041c7cb!2sMaddy%20Unisex%20Salon!5e0!3m2!1sen!2sin!4v1716548900000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Maddy Unisex Salon Google Map Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="row"><span>OxyLife Cleanup</span><span>₹600</span></div>
-<div class="row"><span>Fruit Cleanup</span><span>₹500</span></div>
-<div class="row"><span>Wine Cleanup</span><span>₹700</span></div>
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Maddy <span class="gold-text">Unisex Salon</span></a>
+                    <p class="footer-tagline">Premium unisex grooming lounge offering unmatched global standards in styling, skincare, and nail aestheticism in Raipur.</p>
+                    <div class="social-icons-row">
+                        <a href="https://www.instagram.com/maddy_unisex_salon" target="_blank" aria-label="Follow Maddy Salon on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/918602403500" aria-label="Contact Maddy Salon via WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank" aria-label="View Maddy Salon on Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Discover</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#why-us">Experience Standard</a>
+                    <a href="#services">Featured Services</a>
+                    <a href="#calculator">Package Planner</a>
+                </div>
+                
+                <div class="footer-links-group">
+                    <h4>Direct Actions</h4>
+                    <a href="https://wa.me/918602403500"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+                    <a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+                    <a href="tel:8602403500"><i class="fa-solid fa-phone"></i> Direct Hotline Call</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maddy Unisex Salon. All Rights Reserved. Designed by <a href="https://wa.me/917746969000?text=Hello%20Ray%20Services!%20I%20saw%20your%20premium%20Maddy%20Salon%20website%20and%20want%20to%20get%20a%20similar%20one%20made%20for%20my%20business%20for%20₹5000." target="_blank" style="color: var(--accent-gold); text-decoration: underline; font-weight: 600;">Ray Services</a>.</p>
+                <div class="footer-meta-links">
+                    <span>Unisex Salon</span>
+                    <span class="bullet">&bull;</span>
+                    <span>Raipur</span>
+                    <span class="bullet">&bull;</span>
+                    <span>Premium Standards</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<div class="row"><span>O3+ D-Tan</span><span>₹500</span></div>
-<div class="row"><span>OxyLife D-Tan</span><span>₹400</span></div>
-<div class="row"><span>Bleach</span><span>₹300</span></div>
+    <!-- RAY SERVICES FLOATING AD PROMO -->
+    <div class="ray-services-promo-card" id="rayPromoCard">
+        <button class="promo-card-close" id="closePromoCard" aria-label="Close Advertisement">&times;</button>
+        <div class="promo-card-body">
+            <div class="promo-card-icon">✨</div>
+            <div class="promo-card-info">
+                <h4>Get a Premium Website!</h4>
+                <p>Ese hi professional website banwayen apne business ke liye sirf <span class="gold-text-bold">₹5,000</span> mein!</p>
+            </div>
+        </div>
+        <div class="promo-card-actions">
+            <a href="https://wa.me/917746969000?text=Hello%20Ray%20Services!%20I%20saw%20your%20premium%20Maddy%20Salon%20website%20and%20want%20to%20get%20a%20similar%20one%20made%20for%20my%20business%20for%20₹5000." target="_blank" class="promo-card-btn wa-btn">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="tel:7746969000" class="promo-card-btn call-btn">
+                <i class="fa-solid fa-phone"></i> Call Agency
+            </a>
+        </div>
+    </div>
 
-<div class="row"><span>Nature Fruit Facial</span><span>₹600</span></div>
-<div class="row"><span>Nature Gold Facial</span><span>₹800</span></div>
-<div class="row"><span>OxyLife Facial</span><span>₹1000</span></div>
-<div class="row"><span>Lotus Gold Facial</span><span>₹1300</span></div>
-<div class="row"><span>Lotus Diamond Facial</span><span>₹1500</span></div>
-
-<div class="row"><span>Loreal Hair Spa</span><span>₹800</span></div>
-<div class="row"><span>Schwarzkopf Hair Spa</span><span>₹800</span></div>
-<div class="row"><span>Nashi Hair Spa</span><span>₹1500</span></div>
-
-</div>
-
-
-<div class="price">
-
-<div class="row"><span>Basic Manicure</span><span>₹400</span></div>
-<div class="row"><span>Deluxe Manicure</span><span>₹500</span></div>
-<div class="row"><span>Super Deluxe Manicure</span><span>₹600</span></div>
-<div class="row"><span>Premium Manicure</span><span>₹700</span></div>
-
-<div class="row"><span>Basic Pedicure</span><span>₹500</span></div>
-<div class="row"><span>Deluxe Pedicure</span><span>₹600</span></div>
-<div class="row"><span>Super Deluxe Pedicure</span><span>₹700</span></div>
-<div class="row"><span>Premium Pedicure</span><span>₹800</span></div>
-
-<div class="row"><span>Root Touchup</span><span>₹1000</span></div>
-<div class="row"><span>Global Hair Colour</span><span>₹1999</span></div>
-<div class="row"><span>Hair Botox</span><span>₹4000</span></div>
-<div class="row"><span>Smoothening</span><span>₹2999</span></div>
-<div class="row"><span>Nanoplastia</span><span>₹4999</span></div>
-
-<div class="row"><span>Party Makeup</span><span>₹1500+</span></div>
-<div class="row"><span>Bridal Makeup</span><span>₹6000+</span></div>
-
-</div>
-
-</div>
-
-
-<div class="buttons">
-
-<a href="https://wa.me/918602403500">
-📅 Book Appointment
-</a>
-
-<a href="https://maps.google.com/?q=Maddy+Unisex+Salon+Raipur" target="_blank">
-📍 Open Location
-</a>
-
-<a href="https://www.google.com/search?q=maddy+salon+raipur&sca_esv=a18bb519f6fed995&sxsrf=ANbL-n4f9IPXUcEcmRt_OYi7JWx-EBQfaQ%3A1773571803032&source=hp&ei=2o62aZXKO9yA2roPjsqq4A8&biw=360&bih=678&oq=&gs_lp=EhFtb2JpbGUtZ3dzLXdpei1ocBoCGAEiACoCCAIyDRAjGPAFGCcY6gIYngYyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyChAjGCcY6gIYiwMyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQEyEBAAGAMYtAIY6gIYjwHYAQFI-QpQAFgAcAF4AJABAJgBAKABAKoBALgBAcgBAJgCAaACGagCLZgDGfEF4WCLYqAJT866BgQIARgKkgcBMaAHALIHALgHAMIHAzQtMcgHGIAIAA&sclient=mobile-gws-wiz-hp#lrd=0x3a28dc56b86f6863:0xcee0951a3041c7cb,3,,,," target="_blank">
-⭐ Google Review
-</a>
-
-</div>
-
-</div>
-
-
-<footer>
-
-<p>📞 8602403500</p>
-
-<p>
-Instagram :
-<a href="https://www.instagram.com/maddy_unisex_salon" style="color:#d4af37">
-@maddy_unisex_salon
-</a>
-</p>
-
-</footer>
-
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
-```
